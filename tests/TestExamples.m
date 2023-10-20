@@ -4,7 +4,7 @@ classdef TestExamples < matlab.unittest.TestCase
 
         function testSquare(testCase)
             % create a number
-            numA = "4";
+            numA = 4;
 
             % Calculate expected result
             numExpected = numA * numA;
