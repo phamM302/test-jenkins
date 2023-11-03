@@ -1,0 +1,81 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   9 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "is_active_c1_CruiseControl_TestSuite"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_c1_CruiseControl_TestSuite"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_CRUISE"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "CRUISE"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_ON"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "CRUISE.ON"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i1"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "AccelResSw_prev"\
+      Description  "ChangeDetectionDoubleBuffer"\
+      SFName       ""\
+      Path         "AccelResSw"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "AccelResSw_start"\
+      Description  "ChangeDetectionDoubleBuffer"\
+      SFName       ""\
+      Path         "AccelResSw"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "CoastSetSw_prev"\
+      Description  "ChangeDetectionDoubleBuffer"\
+      SFName       ""\
+      Path         "CoastSetSw"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "CoastSetSw_start"\
+      Description  "ChangeDetectionDoubleBuffer"\
+      SFName       ""\
+      Path         "CoastSetSw"\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

@@ -1,0 +1,573 @@
+
+03-Nov-2023 05:39:12
+Checking compatibility for test generation: model 'CruiseControl_TestSuite'
+Compiling model...done
+Building model representation...done
+
+03-Nov-2023 05:39:20
+'CruiseControl_TestSuite' is compatible for test generation with Simulink Design Verifier.
+
+
+Generating tests using model representation from 03-Nov-2023 05:39:20...
+
+SATISFIED BY COVERAGE DATA
+Transition "[~CruiseOnOff]" from "CRUISE" to "OFF"
+trigger expression false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[~CruiseOnOff]" from "CRUISE" to "OFF"
+trigger expression true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[Brake||Speed> maxtspeed||S..." from "ON" to "STANDBY"
+"Brake" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[Brake||Speed> maxtspeed||S..." from "ON" to "STANDBY"
+"Brake" true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[Brake||Speed> maxtspeed||S..." from "ON" to "STANDBY"
+"Speed> maxtspeed" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[Brake||Speed> maxtspeed||S..." from "ON" to "STANDBY"
+"Speed> maxtspeed" true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[Brake||Speed> maxtspeed||S..." from "ON" to "STANDBY"
+"Speed<mintspeed" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[Brake||Speed> maxtspeed||S..." from "ON" to "STANDBY"
+"Speed<mintspeed" true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[Brake||Speed> maxtspeed||S..." from "ON" to "STANDBY"
+trigger expression false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[Brake||Speed> maxtspeed||S..." from "ON" to "STANDBY"
+trigger expression with "Brake" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[Brake||Speed> maxtspeed||S..." from "ON" to "STANDBY"
+trigger expression with "Brake" true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[Brake||Speed> maxtspeed||S..." from "ON" to "STANDBY"
+trigger expression with "Speed> maxtspeed" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[Brake||Speed> maxtspeed||S..." from "ON" to "STANDBY"
+trigger expression with "Speed> maxtspeed" true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[Brake||Speed> maxtspeed||S..." from "ON" to "STANDBY"
+trigger expression with "Speed<mintspeed" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[Brake||Speed> maxtspeed||S..." from "ON" to "STANDBY"
+trigger expression with "Speed<mintspeed" true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[Brake||Speed> maxtspeed||S..." from "ON" to "STANDBY"
+trigger expression true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[!AccelResSw || ...
+tspeed ..." from "Accel" to "Steady"
+"AccelResSw" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[!AccelResSw || ...
+tspeed ..." from "Accel" to "Steady"
+"AccelResSw" true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[!AccelResSw || ...
+tspeed ..." from "Accel" to "Steady"
+"tspeed >= maxtspeed" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[!AccelResSw || ...
+tspeed ..." from "Accel" to "Steady"
+"tspeed >= maxtspeed" true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[!AccelResSw || ...
+tspeed ..." from "Accel" to "Steady"
+trigger expression false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[!AccelResSw || ...
+tspeed ..." from "Accel" to "Steady"
+trigger expression with "AccelResSw" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[!AccelResSw || ...
+tspeed ..." from "Accel" to "Steady"
+trigger expression with "AccelResSw" true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[!AccelResSw || ...
+tspeed ..." from "Accel" to "Steady"
+trigger expression with "tspeed >= maxtspeed" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[!AccelResSw || ...
+tspeed ..." from "Accel" to "Steady"
+trigger expression with "tspeed >= maxtspeed" true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[!AccelResSw || ...
+tspeed ..." from "Accel" to "Steady"
+trigger expression true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[after(10*incdec...
+/holdra..." from Junction #0 to Junction #1
+trigger expression false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[after(10*incdec...
+/holdra..." from Junction #0 to Junction #1
+trigger expression true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[!CoastSetSw || ...
+tspeed ..." from "Coast" to "Steady"
+"CoastSetSw" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[!CoastSetSw || ...
+tspeed ..." from "Coast" to "Steady"
+"CoastSetSw" true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[!CoastSetSw || ...
+tspeed ..." from "Coast" to "Steady"
+"tspeed <= mintspeed" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[!CoastSetSw || ...
+tspeed ..." from "Coast" to "Steady"
+"tspeed <= mintspeed" true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[!CoastSetSw || ...
+tspeed ..." from "Coast" to "Steady"
+trigger expression false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[!CoastSetSw || ...
+tspeed ..." from "Coast" to "Steady"
+trigger expression with "CoastSetSw" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[!CoastSetSw || ...
+tspeed ..." from "Coast" to "Steady"
+trigger expression with "CoastSetSw" true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[!CoastSetSw || ...
+tspeed ..." from "Coast" to "Steady"
+trigger expression with "tspeed <= mintspeed" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[!CoastSetSw || ...
+tspeed ..." from "Coast" to "Steady"
+trigger expression with "tspeed <= mintspeed" true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[!CoastSetSw || ...
+tspeed ..." from "Coast" to "Steady"
+trigger expression true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[after(10*incdec...
+/holdra..." from Junction #2 to Junction #3
+trigger expression false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[after(10*incdec...
+/holdra..." from Junction #2 to Junction #3
+trigger expression true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[hasChangedTo(AccelResSw,tr..." from "Steady" to "Accel"
+"hasChangedTo(AccelResSw,true)" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[hasChangedTo(AccelResSw,tr..." from "Steady" to "Accel"
+trigger expression false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[hasChangedTo(AccelResSw,tr..." from "Steady" to "Accel"
+trigger expression with "hasChangedTo(AccelResSw,true)" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[hasChangedTo(CoastSetSw,tr..." from "Steady" to "Coast"
+"hasChangedTo(CoastSetSw,true)" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[hasChangedTo(CoastSetSw,tr..." from "Steady" to "Coast"
+trigger expression false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[hasChangedTo(CoastSetSw,tr..." from "Steady" to "Coast"
+trigger expression with "hasChangedTo(CoastSetSw,true)" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[~Brake && ...
+Speed<=maxts..." from "STANDBY" to Junction #6
+"Brake" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[~Brake && ...
+Speed<=maxts..." from "STANDBY" to Junction #6
+"Speed<=maxtspeed" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[~Brake && ...
+Speed<=maxts..." from "STANDBY" to Junction #6
+"Speed<=maxtspeed" true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[~Brake && ...
+Speed<=maxts..." from "STANDBY" to Junction #6
+"Speed>=mintspeed" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[~Brake && ...
+Speed<=maxts..." from "STANDBY" to Junction #6
+"Speed>=mintspeed" true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[~Brake && ...
+Speed<=maxts..." from "STANDBY" to Junction #6
+trigger expression false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[~Brake && ...
+Speed<=maxts..." from "STANDBY" to Junction #6
+trigger expression with "Brake" true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[~Brake && ...
+Speed<=maxts..." from "STANDBY" to Junction #6
+trigger expression with "Speed<=maxtspeed" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[~Brake && ...
+Speed<=maxts..." from "STANDBY" to Junction #6
+trigger expression with "Speed<=maxtspeed" true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[~Brake && ...
+Speed<=maxts..." from "STANDBY" to Junction #6
+trigger expression with "Speed>=mintspeed" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[~Brake && ...
+Speed<=maxts..." from "STANDBY" to Junction #6
+trigger expression with "Speed>=mintspeed" true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[~Brake && ...
+Speed<=maxts..." from "STANDBY" to Junction #6
+trigger expression true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[hasChangedTo(AccelResSw,tr..." from Junction #6 to "Steady"
+"hasChangedTo(AccelResSw,true)" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[hasChangedTo(AccelResSw,tr..." from Junction #6 to "Steady"
+"hasChangedTo(AccelResSw,true)" true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[hasChangedTo(AccelResSw,tr..." from Junction #6 to "Steady"
+"tspeed!=uint8(0)" true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[hasChangedTo(AccelResSw,tr..." from Junction #6 to "Steady"
+trigger expression false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[hasChangedTo(AccelResSw,tr..." from Junction #6 to "Steady"
+trigger expression with "hasChangedTo(AccelResSw,true)" false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[hasChangedTo(AccelResSw,tr..." from Junction #6 to "Steady"
+trigger expression with "hasChangedTo(AccelResSw,true)" true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[hasChangedTo(AccelResSw,tr..." from Junction #6 to "Steady"
+trigger expression with "tspeed!=uint8(0)" true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition "[hasChangedTo(AccelResSw,tr..." from Junction #6 to "Steady"
+trigger expression true
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition " [hasChangedTo(CoastSetSw,t..." from Junction #7 to "ON"
+trigger expression false
+Analysis Time = 00:00:06
+
+SATISFIED BY COVERAGE DATA
+Transition " [hasChangedTo(CoastSetSw,t..." from Junction #7 to "ON"
+trigger expression true
+Analysis Time = 00:00:06
+
+SATISFIED
+State "CRUISE"
+Substate executed "STANDBY"
+Analysis Time = 00:00:06
+
+SATISFIED
+State "CRUISE"
+Substate executed "ON"
+Analysis Time = 00:00:06
+
+SATISFIED
+State "CRUISE"
+Substate exited when parent exits "ON"
+Analysis Time = 00:00:06
+
+SATISFIED
+Transition "[CruiseOnOff]" from "OFF" to "CRUISE"
+trigger expression true
+Analysis Time = 00:00:06
+
+SATISFIED
+Transition "[CruiseOnOff]" from "OFF" to "CRUISE"
+trigger expression false
+Analysis Time = 00:00:06
+
+SATISFIED
+Chart "ComputeTargetSpeed"
+Substate executed State "OFF"
+Analysis Time = 00:00:06
+
+SATISFIED
+Transition "[~Brake && ...
+Speed<=maxts..." from "STANDBY" to Junction #6
+trigger expression with "Brake" false
+Analysis Time = 00:00:06
+
+SATISFIED
+State "CRUISE"
+Substate exited when parent exits "STANDBY"
+Analysis Time = 00:00:06
+
+SATISFIED
+State "ON"
+Substate exited when parent exits "Steady"
+Analysis Time = 00:00:06
+
+SATISFIED
+Chart "ComputeTargetSpeed"
+Substate executed State "CRUISE"
+Analysis Time = 00:00:06
+
+SATISFIED
+State "ON"
+Substate executed "Steady"
+Analysis Time = 00:00:06
+
+SATISFIED
+Transition "[hasChangedTo(CoastSetSw,tr..." from "Steady" to Junction #4
+trigger expression false
+Analysis Time = 00:00:06
+
+SATISFIED
+Transition "[~Brake && ...
+Speed<=maxts..." from "STANDBY" to Junction #6
+"Brake" true
+Analysis Time = 00:00:06
+
+SATISFIED
+Transition "[hasChangedTo(AccelResSw,tr..." from Junction #6 to "Steady"
+"tspeed!=uint8(0)" false
+Analysis Time = 00:00:08
+
+SATISFIED
+Transition "[hasChangedTo(AccelResSw,tr..." from Junction #6 to "Steady"
+trigger expression with "tspeed!=uint8(0)" false
+Analysis Time = 00:00:08
+
+SATISFIED
+Transition "[hasChangedTo(AccelResSw,tr..." from "Steady" to "Accel"
+trigger expression true
+Analysis Time = 00:00:08
+
+SATISFIED
+Transition "[hasChangedTo(AccelResSw,tr..." from "Steady" to "Accel"
+"hasChangedTo(AccelResSw,true)" true
+Analysis Time = 00:00:08
+
+SATISFIED
+Transition "[hasChangedTo(AccelResSw,tr..." from "Steady" to "Accel"
+"tspeed < maxtspeed" true
+Analysis Time = 00:00:08
+
+SATISFIED
+Transition "[hasChangedTo(AccelResSw,tr..." from "Steady" to "Accel"
+trigger expression with "tspeed < maxtspeed" true
+Analysis Time = 00:00:08
+
+SATISFIED
+Transition "[hasChangedTo(AccelResSw,tr..." from "Steady" to "Accel"
+trigger expression with "hasChangedTo(AccelResSw,true)" true
+Analysis Time = 00:00:08
+
+SATISFIED
+State "ON"
+Substate exited when parent exits "Accel"
+Analysis Time = 00:00:08
+
+SATISFIED
+Transition "[hasChangedTo(CoastSetSw,tr..." from "Steady" to "Coast"
+trigger expression with "tspeed > mintspeed" true
+Analysis Time = 00:00:09
+
+SATISFIED
+Transition "[hasChangedTo(CoastSetSw,tr..." from "Steady" to "Coast"
+"hasChangedTo(CoastSetSw,true)" true
+Analysis Time = 00:00:09
+
+SATISFIED
+State "ON"
+Substate exited when parent exits "Coast"
+Analysis Time = 00:00:09
+
+SATISFIED
+Transition "[hasChangedTo(CoastSetSw,tr..." from "Steady" to "Coast"
+trigger expression with "hasChangedTo(CoastSetSw,true)" true
+Analysis Time = 00:00:09
+
+SATISFIED
+Transition "[hasChangedTo(CoastSetSw,tr..." from "Steady" to "Coast"
+"tspeed > mintspeed" true
+Analysis Time = 00:00:09
+
+SATISFIED
+Transition "[hasChangedTo(CoastSetSw,tr..." from "Steady" to "Coast"
+trigger expression true
+Analysis Time = 00:00:09
+
+SATISFIED
+State "ON"
+Substate executed "Accel"
+Analysis Time = 00:00:09
+
+SATISFIED
+State "ON"
+Substate executed "Coast"
+Analysis Time = 00:00:10
+
+SATISFIED
+Transition "[hasChangedTo(AccelResSw,tr..." from "Steady" to "Accel"
+"tspeed < maxtspeed" false
+Analysis Time = 00:00:10
+
+SATISFIED
+Transition "[hasChangedTo(AccelResSw,tr..." from "Steady" to "Accel"
+trigger expression with "tspeed < maxtspeed" false
+Analysis Time = 00:00:10
+
+SATISFIED
+Transition "[hasChangedTo(CoastSetSw,tr..." from "Steady" to Junction #4
+trigger expression true
+Analysis Time = 00:00:11
+
+SATISFIED
+Transition "[hasChangedTo(CoastSetSw,tr..." from "Steady" to "Coast"
+"tspeed > mintspeed" false
+Analysis Time = 00:00:11
+
+SATISFIED
+Transition "[hasChangedTo(CoastSetSw,tr..." from "Steady" to "Coast"
+trigger expression with "tspeed > mintspeed" false
+Analysis Time = 00:00:11
+
+
+03-Nov-2023 05:39:35
+
+Completed normally.
+
+Generating output files:
+
+03-Nov-2023 05:39:36
+Results generation completed.
+
+    Data file:
+    C:\Users\Michael Pham\Downloads\requirements-based-testing-example-master\sldv_output\CruiseControl_TestSuite\CruiseControl_TestSuite_sldvdata.mat
+

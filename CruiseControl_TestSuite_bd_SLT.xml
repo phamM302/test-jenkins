@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/simulinktest_harness_cache/R2023a">
+  <simulinktest_harness_cache.Cache type="simulinktest_harness_cache.Cache" uuid="8acbf538-b4ae-4e4e-a2de-e6ed185b49b0">
+    <inputHierarchyVector type="simulinktest_harness_cache.IOHierarchy" uuid="f7ebfa24-0d65-47cf-8fc5-faeb2bf18fda">
+      <busType>BUSTYPE_NOT_BUS</busType>
+      <dataType>boolean</dataType>
+      <facadeName>CruiseOnOff</facadeName>
+      <isDataPort>true</isDataPort>
+      <name>CruiseOnOff</name>
+    </inputHierarchyVector>
+    <inputHierarchyVector type="simulinktest_harness_cache.IOHierarchy" uuid="e71fb953-b8b1-4378-983a-ec3d109d28e5">
+      <busType>BUSTYPE_NOT_BUS</busType>
+      <dataType>boolean</dataType>
+      <facadeName>Brake</facadeName>
+      <isDataPort>true</isDataPort>
+      <name>Brake</name>
+    </inputHierarchyVector>
+    <inputHierarchyVector type="simulinktest_harness_cache.IOHierarchy" uuid="d701fdd1-8490-46c5-9710-cb4d2cdbb35f">
+      <busType>BUSTYPE_NOT_BUS</busType>
+      <dataType>uint8</dataType>
+      <facadeName>Speed</facadeName>
+      <isDataPort>true</isDataPort>
+      <name>Speed</name>
+    </inputHierarchyVector>
+    <inputHierarchyVector type="simulinktest_harness_cache.IOHierarchy" uuid="fdf70cc0-6988-44ca-8b48-182365cf10d2">
+      <busType>BUSTYPE_NOT_BUS</busType>
+      <dataType>boolean</dataType>
+      <facadeName>CoastSetSw</facadeName>
+      <isDataPort>true</isDataPort>
+      <name>CoastSetSw</name>
+    </inputHierarchyVector>
+    <inputHierarchyVector type="simulinktest_harness_cache.IOHierarchy" uuid="8f7d39b6-e5a4-4a36-9df8-8e7aa31d0b49">
+      <busType>BUSTYPE_NOT_BUS</busType>
+      <dataType>boolean</dataType>
+      <facadeName>AccelResSw</facadeName>
+      <isDataPort>true</isDataPort>
+      <name>AccelResSw</name>
+    </inputHierarchyVector>
+    <outputHierarchyVector type="simulinktest_harness_cache.IOHierarchy" uuid="3b07d137-e5ca-43c7-bac4-0a0fa4c32273">
+      <busType>BUSTYPE_NOT_BUS</busType>
+      <dataType>boolean</dataType>
+      <facadeName>engaged</facadeName>
+      <isDataPort>true</isDataPort>
+      <name>engaged</name>
+    </outputHierarchyVector>
+    <outputHierarchyVector type="simulinktest_harness_cache.IOHierarchy" uuid="9104227c-44f5-4953-9059-69be5f6ddcac">
+      <busType>BUSTYPE_NOT_BUS</busType>
+      <dataType>uint8</dataType>
+      <facadeName>tspeed</facadeName>
+      <isDataPort>true</isDataPort>
+      <name>tspeed</name>
+    </outputHierarchyVector>
+    <usedVars>AAFJTQAAAAAOAAAAKAAAAAYAAAAIAAAAAQAAAAAAAAAFAAAACAAAAAAAAAAAAAAAAQAAAAAAAAA=</usedVars>
+  </simulinktest_harness_cache.Cache>
+</MF0>
