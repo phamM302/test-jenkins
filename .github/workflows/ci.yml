@@ -36,6 +36,7 @@ jobs:
       - name: Run Simulink Tests
         run: matlab -batch "scripts/runTestSuiteWithCoverage.m"
 
+
       #- name: Upload coverage reports to Codecov
       #  uses: codecov/codecov-action@v3
       #  env:
