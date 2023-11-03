@@ -27,32 +27,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Setup Matlab
-        uses: matlab-actions/setup-matlab@v1
+        uses: matlab-actions/run-tests@v1.5.2
 
-      - name: Install Requirements Toolbox
-        uses: matlab-actions/install-addons@v1
-        with:
-          addon: 'Requirements_Toolbox'
-          version: 'latest'
-
-      - name: Install Simulink Test
-        uses: matlab-actions/install-addons@v1
-        with:
-          addon: 'Simulink_Test'
-          version: 'latest'
-
-      - name: Install Simulink Coverage
-        uses: matlab-actions/install-addons@v1
-        with:
-          addon: 'Simulink_Coverage'
-          version: 'latest'
-
-      - name: Install Simulink Design Verifier
-        uses: matlab-actions/install-addons@v1
-        with:
-          addon: 'Simulink_Design_Verifier'
-          version: 'latest'
-      
+      #simulink tests
       - name: Run Simulink Tests
         run: matlab -batch "scripts/runTestSuiteWithCoverage.m"
 
