@@ -29,16 +29,36 @@ jobs:
       - name: Setup Matlab
         uses: matlab-actions/setup-matlab@v1
 
-      # Runs a set of commands using the runners shell
-      - name: Run all tests
-        uses: matlab-actions/run-tests@v1
+      - name: Install Requirements Toolbox
+        uses: matlab-actions/install-addons@v1
         with:
-          source-folder: code
-          code-coverage-cobertura: coverage.xml
+          addon: 'Requirements_Toolbox'
+          version: 'latest'
 
-      - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v3
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      - name: Install Simulink Test
+        uses: matlab-actions/install-addons@v1
         with:
-          file: coverage.xml
+          addon: 'Simulink_Test'
+          version: 'latest'
+
+      - name: Install Simulink Coverage
+        uses: matlab-actions/install-addons@v1
+        with:
+          addon: 'Simulink_Coverage'
+          version: 'latest'
+
+      - name: Install Simulink Design Verifier
+        uses: matlab-actions/install-addons@v1
+        with:
+          addon: 'Simulink_Design_Verifier'
+          version: 'latest'
+      
+      - name: Run Simulink Tests
+        run: matlab -batch "scripts/runTestSuiteWithCoverage.m"
+
+      #- name: Upload coverage reports to Codecov
+      #  uses: codecov/codecov-action@v3
+      #  env:
+      #    CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      #  with:
+      #    file: coverage.xml
